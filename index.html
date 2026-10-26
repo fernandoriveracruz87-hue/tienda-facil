@@ -1,0 +1,467 @@
+
+---------------------- Errores en la hoja 'ANEXO4_INFORMACIÓN DE AGUA' ----------------------
+//////////////////////////////////// Clave Catastral //////////////////////////
+► Clave catastral incorrecta: Debe tener 16 posiciones sin separadores, espacios ni comas. Ejemplo: 12342567890123456. Si no se dispone del dato, usar 0000000000000000.
+📟 Clave catastral con longitud incorrecta en la celda C145446: '0'
+📟 Clave catastral con longitud incorrecta en la celda C150995: '0'
+📟 Clave catastral con longitud incorrecta en la celda C150996: '0'
+📟 Clave catastral con longitud incorrecta en la celda C150997: '0'
+📟 Clave catastral con longitud incorrecta en la celda C150998: '0'
+📟 Existen 88 claves con longitud incorrecta.
+
+
+//////////////////////////////////// Domicilio //////////////////////////
+►Datos de domicilio faltantes. ( Nombre completo de la calle donde se encuentra el predio, ejemplo: Calle, No, ext, No, Int, Colonia, C.P., Asentamiento.
+🔢 Domicilio sin números en D84: 'rancho el peral  fracc. b, parque industrial xhala, cuautitlan izcalli, estado de mexico'
+🔢 Domicilio sin números en D85: 'rancho el peral  fracc. b, parque industrial xhala, cuautitlan izcalli, estado de mexico'
+🔢 Domicilio sin números en D86: 'rancho el peral  fracc. b, parque industrial xhala, cuautitlan izcalli, estado de mexico'
+🔢 Domicilio sin números en D87: 'rancho el peral  fracc. b, parque industrial xhala, cuautitlan izcalli, estado de mexico'
+🔢 Domicilio sin números en D88: 'rancho el peral  fracc. b, parque industrial xhala, cuautitlan izcalli, estado de mexico'
+🔢 40965 domicilios sin números.
+
+
+//////////////////////////////////// PAGOS DUPLICADOS POR ID (AGUA) //////////////////////////
+⚠️ Se detectaron 184 pagos duplicados por ID.
+🚨 En el ID 00085228: se encontró un pago duplicado con el tipo de servicio 'CUOTA FIJA', periodo 5-12, ejercicio 2025.
+🚨 En el ID 00104849: se encontró un pago duplicado con el tipo de servicio 'MEDIDO', periodo 3-4, ejercicio 2026.
+🚨 En el ID 00116848: se encontró un pago duplicado con el tipo de servicio 'MEDIDO', periodo 1-2, ejercicio 2026.
+🚨 En el ID 00000000: se encontró un pago duplicado con el tipo de servicio 'MEDIDO', periodo 1-2, ejercicio 2026.
+🚨 En el ID 00000000: se encontró un pago duplicado con el tipo de servicio 'MEDIDO', periodo 3-4, ejercicio 2026.
+
+//////////////////////////////////// INTEGRIDAD CRONOLÓGICA DE PAGOS //////////////////////////
+► Valida la secuencia lógica de pagos Corriente, Rezago y Adeudos por ID, Tipo de Servicio y Ejercicio Fiscal.
+► Detecta traslapes de periodos, pagos fuera de secuencia, huecos en la continuidad, adeudos que ya fueron liquidados y coberturas anuales inconsistentes.
+► El análisis se realiza considerando el Tipo de Servicio, por lo que distintos conceptos (Agua, Drenaje, Medido, etc.) se evalúan de manera independiente.
+⚠️ Se detectaron 581 pagos traslapados.
+🚨 ID 00152271 (MEDIDO) ejercicio 2026: los pagos '5-5' (fila 9) y '5-6' (fila 579376) se traslapan en los meses 5.
+🚨 ID 00000144 (MEDIDO) ejercicio 2025: los pagos '1-12' (fila 417) y '9-12' (fila 418) se traslapan en los meses 9, 10, 11, 12.
+🚨 ID 00000144 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 419) y '1-4' (fila 420) se traslapan en los meses 1, 2.
+🚨 ID 00000144 (MEDIDO) ejercicio 2026: los pagos '1-4' (fila 420) y '3-4' (fila 421) se traslapan en los meses 3, 4.
+🚨 ID 00140576 (MEDIDO) ejercicio 2025: los pagos '1-12' (fila 2859) y '1-10' (fila 532013) se traslapan en los meses 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
+🚨 ID 00140576 (MEDIDO) ejercicio 2025: los pagos '1-12' (fila 2859) y '11-12' (fila 532014) se traslapan en los meses 11, 12.
+🚨 ID 00142002 (MEDIDO) ejercicio 2025: los pagos '11-12' (fila 18260) y '11-12' (fila 538040) se traslapan en los meses 11, 12.
+🚨 ID 00142002 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 18261) y '1-2' (fila 538041) se traslapan en los meses 1, 2.
+🚨 ID 00142002 (MEDIDO) ejercicio 2026: los pagos '3-4' (fila 18262) y '3-4' (fila 538042) se traslapan en los meses 3, 4.
+🚨 ID 00012323 (MEDIDO) ejercicio 2025: los pagos '10-12' (fila 32700) y '1-12' (fila 32701) se traslapan en los meses 10, 11, 12.
+🚨 ID 00012323 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 32702) y '1-12' (fila 32703) se traslapan en los meses 1, 2.
+🚨 ID 00012323 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 32702) y '1-4' (fila 32704) se traslapan en los meses 1, 2.
+🚨 ID 00012323 (MEDIDO) ejercicio 2026: los pagos '1-12' (fila 32703) y '1-4' (fila 32704) se traslapan en los meses 1, 2, 3, 4.
+🚨 ID 00012323 (MEDIDO) ejercicio 2026: los pagos '1-12' (fila 32703) y '5-6' (fila 32705) se traslapan en los meses 5, 6.
+🚨 ID 00140135 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 43316) y '1-12' (fila 530130) se traslapan en los meses 1, 2.
+🚨 ID 00140135 (MEDIDO) ejercicio 2026: los pagos '3-4' (fila 43317) y '1-12' (fila 530130) se traslapan en los meses 3, 4.
+🚨 ID 00140135 (MEDIDO) ejercicio 2026: los pagos '5-6' (fila 43318) y '1-12' (fila 530130) se traslapan en los meses 5, 6.
+🚨 ID 00142023 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 77606) y '1-4' (fila 538149) se traslapan en los meses 1, 2.
+🚨 ID 00142023 (MEDIDO) ejercicio 2026: los pagos '3-4' (fila 77607) y '1-4' (fila 538149) se traslapan en los meses 3, 4.
+🚨 ID 00000000 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 124794) y '1-2' (fila 440897) se traslapan en los meses 1, 2.
+🚨 ID 00000000 (MEDIDO) ejercicio 2026: los pagos '3-4' (fila 124795) y '3-4' (fila 440898) se traslapan en los meses 3, 4.
+🚨 ID 00000000 (MEDIDO) ejercicio 2026: los pagos '5-6' (fila 124796) y '5-6' (fila 440899) se traslapan en los meses 5, 6.
+🚨 ID 00045638 (MEDIDO) ejercicio 2026: los pagos '1-4' (fila 156462) y '3-4' (fila 156463) se traslapan en los meses 3, 4.
+🚨 ID 00052827 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 185888) y '1-6' (fila 185891) se traslapan en los meses 1, 2.
+🚨 ID 00052827 (MEDIDO) ejercicio 2026: los pagos '3-4' (fila 185889) y '1-6' (fila 185891) se traslapan en los meses 3, 4.
+🚨 ID 00052827 (MEDIDO) ejercicio 2026: los pagos '5-6' (fila 185890) y '1-6' (fila 185891) se traslapan en los meses 5, 6.
+🚨 ID 00064634 (MEDIDO) ejercicio 2026: los pagos '1-12' (fila 232505) y '1-2' (fila 232506) se traslapan en los meses 1, 2.
+🚨 ID 00141940 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 233621) y '1-2' (fila 537768) se traslapan en los meses 1, 2.
+🚨 ID 00141940 (MEDIDO) ejercicio 2026: los pagos '3-4' (fila 233622) y '3-4' (fila 537769) se traslapan en los meses 3, 4.
+🚨 ID 00141966 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 233812) y '1-2' (fila 537899) se traslapan en los meses 1, 2.
+🚨 ID 00141966 (MEDIDO) ejercicio 2026: los pagos '3-4' (fila 233813) y '3-4' (fila 537900) se traslapan en los meses 3, 4.
+🚨 ID 00066780 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 241090) y '1-12' (fila 241091) se traslapan en los meses 1, 2.
+🚨 ID 00066780 (MEDIDO) ejercicio 2026: los pagos '1-12' (fila 241091) y '3-4' (fila 241092) se traslapan en los meses 3, 4.
+🚨 ID 00066780 (MEDIDO) ejercicio 2026: los pagos '1-12' (fila 241091) y '5-6' (fila 241093) se traslapan en los meses 5, 6.
+🚨 ID 00141973 (MEDIDO) ejercicio 2025: los pagos '11-12' (fila 271611) y '1-12' (fila 537926) se traslapan en los meses 11, 12.
+🚨 ID 00141973 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 271612) y '1-4' (fila 537927) se traslapan en los meses 1, 2.
+🚨 ID 00141973 (MEDIDO) ejercicio 2026: los pagos '3-4' (fila 271613) y '1-4' (fila 537927) se traslapan en los meses 3, 4.
+🚨 ID 00085228 (CUOTA FIJA) ejercicio 2025: los pagos '5-12' (fila 313067) y '5-12' (fila 313068) se traslapan en los meses 5, 6, 7, 8, 9, 10, 11, 12.
+🚨 ID 00142042 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 347667) y '1-12' (fila 538224) se traslapan en los meses 1, 2.
+🚨 ID 00142042 (MEDIDO) ejercicio 2026: los pagos '3-4' (fila 347668) y '1-12' (fila 538224) se traslapan en los meses 3, 4.
+🚨 ID 00142042 (MEDIDO) ejercicio 2026: los pagos '5-6' (fila 347669) y '1-12' (fila 538224) se traslapan en los meses 5, 6.
+🚨 ID 00140818 (MEDIDO) ejercicio 2025: los pagos '11-12' (fila 350479) y '1-12' (fila 532988) se traslapan en los meses 11, 12.
+🚨 ID 00140818 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 350480) y '1-2' (fila 532989) se traslapan en los meses 1, 2.
+🚨 ID 00140818 (MEDIDO) ejercicio 2026: los pagos '3-4' (fila 350481) y '3-4' (fila 532990) se traslapan en los meses 3, 4.
+🚨 ID 00141944 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 373183) y '1-12' (fila 537792) se traslapan en los meses 1, 2.
+🚨 ID 00141944 (MEDIDO) ejercicio 2026: los pagos '3-4' (fila 373184) y '1-12' (fila 537792) se traslapan en los meses 3, 4.
+🚨 ID 00141944 (MEDIDO) ejercicio 2026: los pagos '5-6' (fila 373185) y '1-12' (fila 537792) se traslapan en los meses 5, 6.
+🚨 ID 00104849 (MEDIDO) ejercicio 2026: los pagos '3-4' (fila 390572) y '3-4' (fila 390573) se traslapan en los meses 3, 4.
+🚨 ID 00141390 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 391546) y '1-12' (fila 535421) se traslapan en los meses 1, 2.
+🚨 ID 00141390 (MEDIDO) ejercicio 2026: los pagos '3-4' (fila 391547) y '1-12' (fila 535421) se traslapan en los meses 3, 4.
+🚨 ID 00109615 (MEDIDO) ejercicio 2025: los pagos '1-4' (fila 409759) y '1-12' (fila 409760) se traslapan en los meses 1, 2, 3, 4.
+🚨 ID 00141574 (MEDIDO) ejercicio 2025: los pagos '1-12' (fila 427004) y '7-12' (fila 536168) se traslapan en los meses 7, 8, 9, 10, 11, 12.
+🚨 ID 00141574 (MEDIDO) ejercicio 2026: los pagos '1-12' (fila 427005) y '1-4' (fila 536169) se traslapan en los meses 1, 2, 3, 4.
+🚨 ID 00141574 (MEDIDO) ejercicio 2026: los pagos '1-12' (fila 427005) y '5-6' (fila 536170) se traslapan en los meses 5, 6.
+🚨 ID 00141572 (MEDIDO) ejercicio 2025: los pagos '9-12' (fila 427012) y '1-12' (fila 536158) se traslapan en los meses 9, 10, 11, 12.
+🚨 ID 00141567 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 427019) y '1-12' (fila 536141) se traslapan en los meses 1, 2.
+🚨 ID 00141561 (MEDIDO) ejercicio 2026: los pagos '1-12' (fila 427040) y '1-2' (fila 536107) se traslapan en los meses 1, 2.
+🚨 ID 00141557 (MEDIDO) ejercicio 2026: los pagos '1-12' (fila 427045) y '1-12' (fila 536095) se traslapan en los meses 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12.
+🚨 ID 00141558 (MEDIDO) ejercicio 2026: los pagos '1-12' (fila 427047) y '1-12' (fila 536096) se traslapan en los meses 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12.
+🚨 ID 00116848 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 438081) y '1-2' (fila 438082) se traslapan en los meses 1, 2.
+🚨 ID 00141507 (MEDIDO) ejercicio 2025: los pagos '7-12' (fila 440901) y '5-12' (fila 535878) se traslapan en los meses 7, 8, 9, 10, 11, 12.
+🚨 ID 00141853 (MEDIDO) ejercicio 2025: los pagos '5-12' (fila 459823) y '9-12' (fila 537278) se traslapan en los meses 9, 10, 11, 12.
+🚨 ID 00141853 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 459824) y '1-4' (fila 537279) se traslapan en los meses 1, 2.
+🚨 ID 00141853 (MEDIDO) ejercicio 2026: los pagos '3-12' (fila 459825) y '1-4' (fila 537279) se traslapan en los meses 3, 4.
+🚨 ID 00141853 (MEDIDO) ejercicio 2026: los pagos '3-12' (fila 459825) y '5-8' (fila 537280) se traslapan en los meses 5, 6, 7, 8.
+🚨 ID 00141847 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 459846) y '1-2' (fila 537253) se traslapan en los meses 1, 2.
+🚨 ID 00141847 (MEDIDO) ejercicio 2026: los pagos '3-4' (fila 459847) y '3-4' (fila 537254) se traslapan en los meses 3, 4.
+🚨 ID 00141835 (MEDIDO) ejercicio 2025: los pagos '3-10' (fila 459905) y '9-12' (fila 537207) se traslapan en los meses 9, 10.
+🚨 ID 00141835 (MEDIDO) ejercicio 2025: los pagos '11-12' (fila 459906) y '9-12' (fila 537207) se traslapan en los meses 11, 12.
+🚨 ID 00141318 (MEDIDO) ejercicio 2026: los pagos '1-12' (fila 459976) y '1-2' (fila 535170) se traslapan en los meses 1, 2.
+🚨 ID 00141318 (MEDIDO) ejercicio 2026: los pagos '1-12' (fila 459976) y '3-4' (fila 535171) se traslapan en los meses 3, 4.
+🚨 ID 00141318 (MEDIDO) ejercicio 2026: los pagos '1-12' (fila 459976) y '5-6' (fila 535172) se traslapan en los meses 5, 6.
+🚨 ID 00141318 (MEDIDO) ejercicio 2026: los pagos '1-12' (fila 459976) y '7-8' (fila 535173) se traslapan en los meses 7, 8.
+🚨 ID 00141320 (MEDIDO) ejercicio 2025: los pagos '1-10' (fila 459982) y '7-12' (fila 535178) se traslapan en los meses 7, 8, 9, 10.
+🚨 ID 00141320 (MEDIDO) ejercicio 2025: los pagos '11-12' (fila 459983) y '7-12' (fila 535178) se traslapan en los meses 11, 12.
+🚨 ID 00141321 (MEDIDO) ejercicio 2025: los pagos '9-12' (fila 459986) y '7-12' (fila 535181) se traslapan en los meses 9, 10, 11, 12.
+🚨 ID 00141321 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 459987) y '1-6' (fila 535182) se traslapan en los meses 1, 2.
+🚨 ID 00141321 (MEDIDO) ejercicio 2026: los pagos '3-4' (fila 459988) y '1-6' (fila 535182) se traslapan en los meses 3, 4.
+🚨 ID 00141330 (MEDIDO) ejercicio 2026: los pagos '1-4' (fila 459996) y '1-12' (fila 535218) se traslapan en los meses 1, 2, 3, 4.
+🚨 ID 00141330 (MEDIDO) ejercicio 2026: los pagos '5-6' (fila 459997) y '1-12' (fila 535218) se traslapan en los meses 5, 6.
+🚨 ID 00141331 (MEDIDO) ejercicio 2025: los pagos '1-10' (fila 459999) y '9-12' (fila 535219) se traslapan en los meses 9, 10.
+🚨 ID 00141331 (MEDIDO) ejercicio 2025: los pagos '11-12' (fila 460000) y '9-12' (fila 535219) se traslapan en los meses 11, 12.
+🚨 ID 00141331 (MEDIDO) ejercicio 2026: los pagos '1-4' (fila 460001) y '1-2' (fila 535220) se traslapan en los meses 1, 2.
+🚨 ID 00141331 (MEDIDO) ejercicio 2026: los pagos '1-4' (fila 460001) y '3-4' (fila 535221) se traslapan en los meses 3, 4.
+🚨 ID 00141515 (MEDIDO) ejercicio 2025: los pagos '7-10' (fila 460059) y '9-12' (fila 535908) se traslapan en los meses 9, 10.
+🚨 ID 00141515 (MEDIDO) ejercicio 2025: los pagos '11-12' (fila 460060) y '9-12' (fila 535908) se traslapan en los meses 11, 12.
+🚨 ID 00141550 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 460978) y '1-12' (fila 536072) se traslapan en los meses 1, 2.
+🚨 ID 00141550 (MEDIDO) ejercicio 2026: los pagos '3-4' (fila 460979) y '1-12' (fila 536072) se traslapan en los meses 3, 4.
+🚨 ID 00141550 (MEDIDO) ejercicio 2026: los pagos '5-6' (fila 460980) y '1-12' (fila 536072) se traslapan en los meses 5, 6.
+🚨 ID 00141550 (MEDIDO) ejercicio 2026: los pagos '7-8' (fila 460981) y '1-12' (fila 536072) se traslapan en los meses 7, 8.
+🚨 ID 00141438 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 461277) y '1-12' (fila 535610) se traslapan en los meses 1, 2.
+🚨 ID 00141438 (MEDIDO) ejercicio 2026: los pagos '3-6' (fila 461278) y '1-12' (fila 535610) se traslapan en los meses 3, 4, 5, 6.
+🚨 ID 00141433 (MEDIDO) ejercicio 2026: los pagos '1-12' (fila 461313) y '1-2' (fila 535579) se traslapan en los meses 1, 2.
+🚨 ID 00141433 (MEDIDO) ejercicio 2026: los pagos '1-12' (fila 461313) y '3-4' (fila 535580) se traslapan en los meses 3, 4.
+🚨 ID 00141433 (MEDIDO) ejercicio 2026: los pagos '1-12' (fila 461313) y '5-6' (fila 535581) se traslapan en los meses 5, 6.
+🚨 ID 00141433 (MEDIDO) ejercicio 2026: los pagos '1-12' (fila 461313) y '7-8' (fila 535582) se traslapan en los meses 7, 8.
+🚨 ID 00141434 (MEDIDO) ejercicio 2026: los pagos '1-2' (fila 461315) y '1-2' (fila 535583) se traslapan en los meses 1, 2.
+🚨 ID 00141412 (MEDIDO) ejercicio 2025: los pagos '1-10' (fila 461321) y '3-10' (fila 535498) se traslapan en los meses 3, 4, 5, 6, 7, 8, 9, 10.
+🚨 ID 00141412 (MEDIDO) ejercicio 2025: los pagos '11-12' (fila 461322) y '11-12' (fila 535499) se traslapan en los meses 11, 12.
+🚨 ID 00141418 (MEDIDO) ejercicio 2025: los pagos '7-12' (fila 461347) y '5-12' (fila 535513) se traslapan en los meses 7, 8, 9, 10, 11, 12.
+⚠️ Se detectaron 123 secuencias de pagos con meses omitidos.
+⚠️ ID 00152307 (MEDIDO) ejercicio 2026: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06.
+⚠️ ID 00141356 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06.
+⚠️ ID 00141355 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00001439 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 07, 08, 09, 10.
+⚠️ ID 00026318 (MEDIDO) ejercicio 2024: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00026319 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06.
+⚠️ ID 00141979 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08.
+⚠️ ID 00141391 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141392 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141328 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08.
+⚠️ ID 00141559 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141182 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08.
+⚠️ ID 00141856 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141845 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06.
+⚠️ ID 00141836 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02.
+⚠️ ID 00141834 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08.
+⚠️ ID 00141314 (MEDIDO) ejercicio 2024: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141315 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141316 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02.
+⚠️ ID 00141322 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06.
+⚠️ ID 00141439 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141416 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141124 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141818 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141645 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02.
+⚠️ ID 00141642 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06.
+⚠️ ID 00141641 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02.
+⚠️ ID 00141636 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06.
+⚠️ ID 00141633 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02.
+⚠️ ID 00141624 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141619 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141462 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00140781 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141206 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141216 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04.
+⚠️ ID 00141273 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141263 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04.
+⚠️ ID 00142214 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00140514 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141140 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02.
+⚠️ ID 00141142 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141543 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02.
+⚠️ ID 00141351 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08.
+⚠️ ID 00141297 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141301 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08.
+⚠️ ID 00141359 (MEDIDO) ejercicio 2024: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06.
+⚠️ ID 00141364 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02.
+⚠️ ID 00141374 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02.
+⚠️ ID 00141448 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06.
+⚠️ ID 00141487 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04.
+⚠️ ID 00141497 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04.
+⚠️ ID 00141592 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141667 (MEDIDO) ejercicio 2024: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04.
+⚠️ ID 00141740 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141741 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141762 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141763 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06.
+⚠️ ID 00141968 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141983 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02.
+⚠️ ID 00141991 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02.
+⚠️ ID 00141994 (MEDIDO) ejercicio 2024: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00141999 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02.
+⚠️ ID 00142000 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04.
+⚠️ ID 00142013 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08.
+⚠️ ID 00142020 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00142029 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00142036 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00142041 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06.
+⚠️ ID 00142063 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08.
+⚠️ ID 00142065 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08.
+⚠️ ID 00142096 (MEDIDO) ejercicio 2024: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04.
+⚠️ ID 00142121 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08.
+⚠️ ID 00142140 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00142167 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06.
+⚠️ ID 00142170 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00142174 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00142175 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00142187 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06.
+⚠️ ID 00142193 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00142205 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08.
+⚠️ ID 00142226 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06.
+⚠️ ID 00142227 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00142270 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08.
+⚠️ ID 00142275 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00142278 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02.
+⚠️ ID 00142304 (MEDIDO) ejercicio 2024: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00142312 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04.
+⚠️ ID 00142331 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06.
+⚠️ ID 00142337 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02.
+⚠️ ID 00142354 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00142364 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08.
+⚠️ ID 00142366 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00142381 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00142418 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00142422 (MEDIDO) ejercicio 2024: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08.
+⚠️ ID 00142426 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00142435 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00142458 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08, 09, 10.
+⚠️ ID 00142462 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04.
+⚠️ ID 00142474 (MEDIDO) ejercicio 2025: existen huecos entre los pagos. Faltan los meses 01, 02, 03, 04, 05, 06, 07, 08.
+⚠️ Se detectaron 1164 adeudos que corresponden a meses previamente pagados.
+🚨 ID 00140376 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 145) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00000204 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 566653) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00141356 (MEDIDO) ejercicio 2025: el adeudo '1-12' (fila 1258) incluye meses ya pagados (07, 08, 09, 10, 11, 12).
+🚨 ID 00141356 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 1259) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00141355 (MEDIDO) ejercicio 2025: el adeudo '1-12' (fila 1270) incluye meses ya pagados (11, 12).
+🚨 ID 00141355 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 1271) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00140603 (MEDIDO) ejercicio 2024: el adeudo '9-12' (fila 1291) incluye meses ya pagados (11, 12).
+🚨 ID 00140603 (MEDIDO) ejercicio 2025: el adeudo '1-12' (fila 1292) incluye meses ya pagados (01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12).
+🚨 ID 00140603 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 1293) incluye meses ya pagados (01, 02, 03, 04).
+🚨 ID 00140655 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 532328) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00141831 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 537190) incluye meses ya pagados (01, 02, 03, 04).
+🚨 ID 00140576 (MEDIDO) ejercicio 2026: el adeudo '1-4' (fila 532015) incluye meses ya pagados (01, 02, 03, 04).
+🚨 ID 00140575 (MEDIDO) ejercicio 2025: el adeudo '9-12' (fila 532010) incluye meses ya pagados (11, 12).
+🚨 ID 00140575 (MEDIDO) ejercicio 2026: el adeudo '1-4' (fila 532011) incluye meses ya pagados (01, 02, 03, 04).
+🚨 ID 00140574 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 2865) incluye meses ya pagados (01, 02).
+🚨 ID 00140313 (MEDIDO) ejercicio 2025: el adeudo '9-12' (fila 530950) incluye meses ya pagados (09, 10, 11, 12).
+🚨 ID 00140313 (MEDIDO) ejercicio 2026: el adeudo '1-4' (fila 530951) incluye meses ya pagados (01, 02, 03, 04).
+🚨 ID 00140313 (MEDIDO) ejercicio 2026: el adeudo '5-6' (fila 530952) incluye meses ya pagados (05, 06).
+🚨 ID 00141967 (MEDIDO) ejercicio 2025: el adeudo '9-12' (fila 5939) incluye meses ya pagados (09, 10, 11, 12).
+🚨 ID 00141967 (MEDIDO) ejercicio 2026: el adeudo '1-4' (fila 5940) incluye meses ya pagados (01, 02, 03, 04).
+🚨 ID 00141967 (MEDIDO) ejercicio 2026: el adeudo '5-6' (fila 5941) incluye meses ya pagados (05, 06).
+🚨 ID 00006201 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 16004) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00141144 (MEDIDO) ejercicio 2026: el adeudo '1-4' (fila 534272) incluye meses ya pagados (01, 02, 03, 04).
+🚨 ID 00141144 (MEDIDO) ejercicio 2026: el adeudo '5-6' (fila 534273) incluye meses ya pagados (05, 06).
+🚨 ID 00140863 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 533166) incluye meses ya pagados (01, 02).
+🚨 ID 00006986 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 18008) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00142002 (MEDIDO) ejercicio 2026: el adeudo '5-6' (fila 18263) incluye meses ya pagados (05, 06).
+🚨 ID 00007130 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 18379) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00009647 (MEDIDO) ejercicio 2025: el adeudo '11-12' (fila 25087) incluye meses ya pagados (11, 12).
+🚨 ID 00009647 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 25088) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00141952 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 537832) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00010910 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 28599) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00011849 (CUOTA FIJA) ejercicio 2026: el adeudo '1-6' (fila 31331) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00011849 (CUOTA FIJA) ejercicio 2026: el adeudo '7-12' (fila 31332) incluye meses ya pagados (07, 08, 09, 10, 11, 12).
+🚨 ID 00141960 (MEDIDO) ejercicio 2025: el adeudo '11-12' (fila 38588) incluye meses ya pagados (11, 12).
+🚨 ID 00018282 (CUOTA FIJA) ejercicio 2026: el adeudo '1-6' (fila 53850) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00018282 (CUOTA FIJA) ejercicio 2026: el adeudo '7-12' (fila 53851) incluye meses ya pagados (07, 08, 09, 10, 11, 12).
+🚨 ID 00018629 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 55436) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00022991 (CUOTA FIJA) ejercicio 2026: el adeudo '1-6' (fila 73137) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00022991 (CUOTA FIJA) ejercicio 2026: el adeudo '7-12' (fila 73138) incluye meses ya pagados (07, 08, 09, 10, 11, 12).
+🚨 ID 00023229 (CUOTA FIJA) ejercicio 2026: el adeudo '1-6' (fila 73748) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00023229 (CUOTA FIJA) ejercicio 2026: el adeudo '7-12' (fila 73749) incluye meses ya pagados (07, 08, 09, 10, 11, 12).
+🚨 ID 00023504 (CUOTA FIJA) ejercicio 2026: el adeudo '1-6' (fila 74593) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00023504 (CUOTA FIJA) ejercicio 2026: el adeudo '7-12' (fila 74594) incluye meses ya pagados (07, 08, 09, 10, 11, 12).
+🚨 ID 00023745 (MEDIDO) ejercicio 2025: el adeudo '1-12' (fila 75346) incluye meses ya pagados (01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12).
+🚨 ID 00023792 (CUOTA FIJA) ejercicio 2026: el adeudo '1-6' (fila 75458) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00023792 (CUOTA FIJA) ejercicio 2026: el adeudo '7-12' (fila 75459) incluye meses ya pagados (07, 08, 09, 10, 11, 12).
+🚨 ID 00023884 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 75754) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00024340 (CUOTA FIJA) ejercicio 2026: el adeudo '1-6' (fila 77219) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00024340 (CUOTA FIJA) ejercicio 2026: el adeudo '7-12' (fila 77220) incluye meses ya pagados (07, 08, 09, 10, 11, 12).
+🚨 ID 00142023 (MEDIDO) ejercicio 2026: el adeudo '5-6' (fila 538150) incluye meses ya pagados (05, 06).
+🚨 ID 00024721 (CUOTA FIJA) ejercicio 2026: el adeudo '1-6' (fila 78600) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00024721 (CUOTA FIJA) ejercicio 2026: el adeudo '7-12' (fila 78601) incluye meses ya pagados (07, 08, 09, 10, 11, 12).
+🚨 ID 00025905 (CUOTA FIJA) ejercicio 2026: el adeudo '1-4' (fila 82217) incluye meses ya pagados (01, 02, 03, 04).
+🚨 ID 00025905 (CUOTA FIJA) ejercicio 2026: el adeudo '5-12' (fila 82218) incluye meses ya pagados (05, 06, 07, 08, 09, 10, 11, 12).
+🚨 ID 00026318 (MEDIDO) ejercicio 2024: el adeudo '1-12' (fila 562582) incluye meses ya pagados (11, 12).
+🚨 ID 00026318 (MEDIDO) ejercicio 2025: el adeudo '1-12' (fila 562583) incluye meses ya pagados (01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12).
+🚨 ID 00026318 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 562584) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00026319 (MEDIDO) ejercicio 2025: el adeudo '1-12' (fila 562589) incluye meses ya pagados (07, 08, 09, 10, 11, 12).
+🚨 ID 00026319 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 562590) incluye meses ya pagados (01, 02).
+🚨 ID 00026320 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 562595) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00141979 (MEDIDO) ejercicio 2025: el adeudo '1-12' (fila 537952) incluye meses ya pagados (09, 10, 11, 12).
+🚨 ID 00141979 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 537953) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00033269 (CUOTA FIJA) ejercicio 2026: el adeudo '1-6' (fila 109854) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00033269 (CUOTA FIJA) ejercicio 2026: el adeudo '7-12' (fila 109855) incluye meses ya pagados (07, 08, 09, 10, 11, 12).
+🚨 ID 00034689 (CUOTA FIJA) ejercicio 2026: el adeudo '1-6' (fila 114736) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00034689 (CUOTA FIJA) ejercicio 2026: el adeudo '7-12' (fila 114737) incluye meses ya pagados (07, 08, 09, 10, 11, 12).
+🚨 ID 00140401 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 531320) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00000000 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 526924) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00037679 (MEDIDO) ejercicio 2025: el adeudo '3-12' (fila 126962) incluye meses ya pagados (03, 04, 05, 06, 07, 08, 09, 10, 11, 12).
+🚨 ID 00037679 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 126963) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00039247 (CUOTA FIJA) ejercicio 2026: el adeudo '1-6' (fila 132226) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00039247 (CUOTA FIJA) ejercicio 2026: el adeudo '7-12' (fila 132227) incluye meses ya pagados (07, 08, 09, 10, 11, 12).
+🚨 ID 00140363 (MEDIDO) ejercicio 2025: el adeudo '1-12' (fila 531144) incluye meses ya pagados (09, 10, 11, 12).
+🚨 ID 00140363 (MEDIDO) ejercicio 2026: el adeudo '1-4' (fila 531145) incluye meses ya pagados (01, 02, 03, 04).
+🚨 ID 00045430 (CUOTA FIJA) ejercicio 2026: el adeudo '1-4' (fila 155468) incluye meses ya pagados (01, 02, 03, 04).
+🚨 ID 00045430 (CUOTA FIJA) ejercicio 2026: el adeudo '5-12' (fila 155469) incluye meses ya pagados (05, 06, 07, 08, 09, 10, 11, 12).
+🚨 ID 00048236 (CUOTA FIJA) ejercicio 2026: el adeudo '1-6' (fila 166882) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00048236 (CUOTA FIJA) ejercicio 2026: el adeudo '7-12' (fila 166883) incluye meses ya pagados (07, 08, 09, 10, 11, 12).
+🚨 ID 00051463 (CUOTA FIJA) ejercicio 2026: el adeudo '1-6' (fila 180529) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00051463 (CUOTA FIJA) ejercicio 2026: el adeudo '7-12' (fila 180530) incluye meses ya pagados (07, 08, 09, 10, 11, 12).
+🚨 ID 00142005 (MEDIDO) ejercicio 2025: el adeudo '11-12' (fila 207221) incluye meses ya pagados (11, 12).
+🚨 ID 00142005 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 207222) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00059448 (CUOTA FIJA) ejercicio 2026: el adeudo '1-6' (fila 212691) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00059448 (CUOTA FIJA) ejercicio 2026: el adeudo '7-12' (fila 212692) incluye meses ya pagados (07, 08, 09, 10, 11, 12).
+🚨 ID 00060938 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 217146) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00062461 (MEDIDO) ejercicio 2026: el adeudo '1-4' (fila 223480) incluye meses ya pagados (01, 02, 03, 04).
+🚨 ID 00062461 (MEDIDO) ejercicio 2026: el adeudo '5-6' (fila 223481) incluye meses ya pagados (05, 06).
+🚨 ID 00141949 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 231046) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00140415 (MEDIDO) ejercicio 2025: el adeudo '1-12' (fila 233567) incluye meses ya pagados (01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12).
+🚨 ID 00140415 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 233568) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+🚨 ID 00141940 (MEDIDO) ejercicio 2026: el adeudo '5-6' (fila 537770) incluye meses ya pagados (05, 06).
+🚨 ID 00141966 (MEDIDO) ejercicio 2026: el adeudo '5-6' (fila 537901) incluye meses ya pagados (05, 06).
+🚨 ID 00141964 (MEDIDO) ejercicio 2026: el adeudo '1-6' (fila 537898) incluye meses ya pagados (01, 02).
+🚨 ID 00067312 (CUOTA FIJA) ejercicio 2025: el adeudo '9-12' (fila 243412) incluye meses ya pagados (09, 10, 11, 12).
+🚨 ID 00067312 (CUOTA FIJA) ejercicio 2026: el adeudo '1-6' (fila 243413) incluye meses ya pagados (01, 02).
+🚨 ID 00067332 (CUOTA FIJA) ejercicio 2026: el adeudo '1-4' (fila 243502) incluye meses ya pagados (01, 02, 03, 04).
+🚨 ID 00067332 (CUOTA FIJA) ejercicio 2026: el adeudo '5-12' (fila 243503) incluye meses ya pagados (05, 06, 07, 08, 09, 10, 11, 12).
+🚨 ID 00067479 (MEDIDO) ejercicio 2025: el adeudo '1-12' (fila 244109) incluye meses ya pagados (01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12).
+🚨 ID 00070159 (CUOTA FIJA) ejercicio 2026: el adeudo '1-6' (fila 253679) incluye meses ya pagados (01, 02, 03, 04, 05, 06).
+⚠️ Se detectaron 152 ejercicios cuya cobertura de pagos no coincide con los adeudos.
+⚠️ ID 00141356 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141355 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00001035 (MEDIDO) ejercicio 2021: los meses pendientes deberían ser 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00001358 (MEDIDO) ejercicio 2023: los meses pendientes deberían ser 05, 06, 07, 08, 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00001439 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 07, 08, 09, 10, pero los adeudos contienen ninguno.
+⚠️ ID 00002142 (MEDIDO) ejercicio 2022: los meses pendientes deberían ser 05, 06, 07, 08, 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00016470 (MEDIDO) ejercicio 2023: los meses pendientes deberían ser 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00019586 (MEDIDO) ejercicio 2022: los meses pendientes deberían ser 05, 06, 07, 08, 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00026318 (MEDIDO) ejercicio 2024: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00026319 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141979 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00041918 (CUOTA FIJA) ejercicio 2022: los meses pendientes deberían ser 05, 06, 07, 08, 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00049055 (MEDIDO) ejercicio 2021: los meses pendientes deberían ser 05, 06, 07, 08, 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00052035 (MEDIDO) ejercicio 2021: los meses pendientes deberían ser 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00056083 (MEDIDO) ejercicio 2021: los meses pendientes deberían ser 07, 08, 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00056310 (MEDIDO) ejercicio 2023: los meses pendientes deberían ser 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00056708 (MEDIDO) ejercicio 2022: los meses pendientes deberían ser 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00065244 (CUOTA FIJA) ejercicio 2021: los meses pendientes deberían ser 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00071410 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 07, 08, 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00072488 (CUOTA FIJA) ejercicio 2023: los meses pendientes deberían ser 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00076974 (MEDIDO) ejercicio 2023: los meses pendientes deberían ser 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00078505 (CUOTA FIJA) ejercicio 2024: los meses pendientes deberían ser 07, 08, 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00086989 (MEDIDO) ejercicio 2022: los meses pendientes deberían ser 07, 08, 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00092063 (CUOTA FIJA) ejercicio 2022: los meses pendientes deberían ser 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00101498 (MEDIDO) ejercicio 2021: los meses pendientes deberían ser 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00141391 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141392 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00105133 (MEDIDO) ejercicio 2023: los meses pendientes deberían ser 05, 06, 07, 08, 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00141328 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00110360 (MEDIDO) ejercicio 2023: los meses pendientes deberían ser 05, 06, 07, 08, 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00113246 (MEDIDO) ejercicio 2021: los meses pendientes deberían ser 07, 08, 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00141559 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00118554 (MEDIDO) ejercicio 2021: los meses pendientes deberían ser 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00119440 (MEDIDO) ejercicio 2022: los meses pendientes deberían ser 05, 06, 07, 08, 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00141182 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141856 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141845 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141836 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141834 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141314 (MEDIDO) ejercicio 2024: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141315 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141316 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141322 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141439 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141416 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141124 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141818 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141645 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141642 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141641 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141636 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141633 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141624 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141619 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141462 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00140781 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00127669 (MEDIDO) ejercicio 2021: los meses pendientes deberían ser 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00130075 (MEDIDO) ejercicio 2022: los meses pendientes deberían ser 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00133323 (MEDIDO) ejercicio 2023: los meses pendientes deberían ser 05, 06, 07, 08, 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00141206 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141216 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141273 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141263 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00133968 (MEDIDO) ejercicio 2021: los meses pendientes deberían ser 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, pero los adeudos contienen ninguno.
+⚠️ ID 00142214 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00140514 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141140 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141142 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141543 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141351 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141297 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141301 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141359 (MEDIDO) ejercicio 2024: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141364 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141374 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141448 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141487 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141497 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141592 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141667 (MEDIDO) ejercicio 2024: los meses pendientes deberían ser 01, 02, 03, 04, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141740 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141741 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141762 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141763 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141968 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141983 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141991 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141994 (MEDIDO) ejercicio 2024: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00141999 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00142000 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00142013 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00142020 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00142029 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00142036 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00142041 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00142063 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00142065 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00142096 (MEDIDO) ejercicio 2024: los meses pendientes deberían ser 01, 02, 03, 04, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00142121 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+⚠️ ID 00142140 (MEDIDO) ejercicio 2025: los meses pendientes deberían ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, pero los adeudos contienen 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12.
+
+/////////////////// ADEUDOS ///////////////////
+
+⚡ Se analizaron 424324 adeudos de agua. Errores detectados: 478 (0.11%)
+🚷 Adeudos incobrables:
+⚠️ V1389: Adeudo 2020 fuera del rango cobrable (5 años).
+⚠️ V1433: Adeudo 2020 fuera del rango cobrable (5 años).
+⚠️ V4388: Adeudo 2020 fuera del rango cobrable (5 años).
+⚠️ V6474: Adeudo 2020 fuera del rango cobrable (5 años).
+⚠️ V6763: Adeudo 2020 fuera del rango cobrable (5 años).
+
+//////////////////////////////////// ADEUDOS CONSECUTIVOS POR ID (AGUA) //////////////////////////
+
+⚠️ Se detectaron 41393 inconsistencias en secuencia de adeudos por ID.
+🚨 ID 00140371: tiene ejercicios fiscales duplicados (2025, 2026).
+🚨 ID 00140373: tiene ejercicios fiscales duplicados (2025, 2026).
+🚨 ID 00140375: tiene ejercicios fiscales duplicados (2025, 2026).
+🚨 ID 00140036: tiene ejercicios fiscales duplicados (2026).
+🚨 ID 00140068: tiene ejercicios fiscales duplicados (2021, 2022, 2023, 2024, 2025, 2026).
+
+
+//////////////////////////////////// ADEUDOS CONSECUTIVOS Y DUPLICADOS POR NOMBRE (AGUA) //////////////////////////
+⚠️ Se detectaron 41481 inconsistencias en secuencia de adeudos por nombre.
+🚨 Contribuyente 'BLANCA ESTELA PEREZ VILLALOBOS' (ID 00140068): tiene ejercicios fiscales duplicados (2026).
+🚨 Contribuyente 'PROF. INTEGRADOS AL SERV. DE LA I.' (ID 00000490): tiene ejercicios fiscales duplicados (2026).
+🚨 Contribuyente 'GABRIEL SALVADOR MONDRAGON LOPEZ' (ID 00000522): tiene ejercicios fiscales duplicados (2026).
+🚨 Contribuyente 'INM.PLAZA REAL' (ID 00000528): tiene ejercicios fiscales duplicados (2026).
+🚨 Contribuyente 'C.USUARIO' (ID 00000529): tiene ejercicios fiscales duplicados (2026).
+
